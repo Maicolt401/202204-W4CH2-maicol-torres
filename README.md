@@ -1,13 +1,32 @@
-# Week 4 - Challenge 2
+# AHORCADO
 
-## Ahorcado
+## Letters
 
-Programa mediante React el juego del ahorcado.
+- Encargada de renderizar todas las letras del alfabeto.
+- Encargada de registrar la acción RECIBIDA mediante un onClick.
 
-En el componente GuessLetters tienen que aparecer tantas líneas como letras tenga la palabra a acertar (que será aleatoria), y se irán sustituyendo por las letras acertadas.
+## UseLetters
 
-En el componente UsedLetters tienen que ir apareciendo las letras que ya se han usado, sin repetirse.
+- Encargada de renderizar todas aquellas letras que ya se han RECIBIDO previamente.
 
-En el componente Result no aparecerá nada hasta el final de la partida. Si el usuario ha ganado, tendrá el texto "You're alive!", y si pierde tendrá el texto "You're dead!".
+## GuessLetters
 
-Incluye Husky con los tres hooks y también el workflow Audit.
+- Encargada de renderizar todas aquellas letras RECIBIDAS que han coindicido con la palabra RECIBIDA.
+
+## Hangman
+
+- Encargado de renderizar el "hangman".
+- Será el encargado de mostrar todos aquellos cambios en su stage como letra fallada RECIBA.
+
+## Result
+
+- Encargado de renderizar un texto RECIBIDO.
+
+## App
+
+- Encargada de renderizar Letters, UseLeters, GuessLetters, Hangman y Result.
+- Encargada de GENERAR una palabra rándom.
+- Encargada de recorrer el alfabeto y dar esta información a las funciones que necesitamos.
+- Encargada de ENVIAR la acción de trasladar la letra seleccionada a UsedLetters.
+- Encargada de ENVIAR la acción de modificar los cambios del stage de Hangman cuando la letra seleccionada no se encuentre en la palabra.
+- Encargada de ENVIAR la acción de añadir la letra seleccionada a GuessLetters cuando esta se encuentre en la palabra.
