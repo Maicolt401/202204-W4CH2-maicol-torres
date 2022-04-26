@@ -1,13 +1,10 @@
 import "./GuessLetters.css";
 
-const GuessLetters = () => {
+const GuessLetters = ({ letter }) => {
   return (
     <ul className="guess-letters">
-      <li className="guess-letter empty"></li>
-      <li className="guess-letter">A</li>
-      <li className="guess-letter empty"></li>
-      <li className="guess-letter">A</li>
-      <li className="guess-letter empty"></li>
+      <li className="guess-letter empty">{letter}</li>
+      <li className="guess-letter"></li>
     </ul>
   );
 };
