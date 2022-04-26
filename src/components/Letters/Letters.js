@@ -1,30 +1,30 @@
 import "./Letters.css";
 
-const Letters = () => {
+const Letters = ({ action }) => {
   return (
     <ul className="letters">
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="a">A</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="b">B</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="c">C</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="d">D</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="e">E</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="f">F</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="g">G</a>
       </li>
-      <li className="letter">
+      <li className="letter" onClick={action}>
         <a href="h">H</a>
       </li>
       <li className="letter">
