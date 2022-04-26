@@ -5,6 +5,10 @@ import Result from "./components/Result/Result";
 import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
+  // const selectMyLetter = () => {
+
+  // };
+
   return (
     <>
       <div className="container">
