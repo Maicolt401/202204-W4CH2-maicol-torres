@@ -5,6 +5,12 @@ import Result from "./components/Result/Result";
 import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
+  const getMyLetter = (letter) => {
+    letter.preventDefault();
+    // return console.log(letter.target.textContent);
+    return letter.target.textContent;
+  };
+
   return (
     <>
       <div className="container">
@@ -14,7 +20,7 @@ function App() {
         </div>
         <GuessLetters />
         <Result />
-        <Letters />
+        <Letters action={getMyLetter} />
       </div>
     </>
   );
